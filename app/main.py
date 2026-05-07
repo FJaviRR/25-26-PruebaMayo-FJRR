@@ -13,3 +13,4 @@ app.include_router(items.router)
 def version():
     return {"status": "Rodriguez Ruiz, Francisco Javier - v.xx"}
 # Comentario de actualizacion para probar actions definitivamente
+# Prueba pylint actions
