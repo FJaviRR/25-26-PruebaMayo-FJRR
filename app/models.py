@@ -1,8 +1,9 @@
+'''Docstring'''
 from sqlalchemy import Column, Integer, String, Float
-from .database import Base
-
+from database import Base
 
 class Item(Base):
+    '''Base de datos'''
     __tablename__ = "items"
 
     id = Column(Integer, primary_key=True, index=True)

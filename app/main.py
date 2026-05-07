@@ -1,6 +1,7 @@
+'''Docstring'''
 from fastapi import FastAPI
-from .database import Base, engine
-from .routers import items
+from database import Base, engine
+from routers import items
 
 Base.metadata.create_all(bind=engine)
 
@@ -11,6 +12,7 @@ app.include_router(items.router)
 # Código que se añade
 @app.get("/status")
 def version():
+    '''Status'''
     return {"status": "Rodriguez Ruiz, Francisco Javier - v.xx"}
 # Comentario de actualizacion para probar actions definitivamente
 # Prueba pylint actions 2
